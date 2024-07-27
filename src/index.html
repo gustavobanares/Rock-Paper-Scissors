@@ -20,18 +20,32 @@
     <div class="relative flex flex-col items-center justify-center text-blue-800 border-2 border-blue-500 font-bold rounded px-7 py-3">
         Score
 
-        <div class="flex w-[70px] items-center justify-between gap-2">
-            Player:
-        </div>
-
-        <div class="flex w-[70px] items-center justify-between gap-2">
-            Machine:
-        </div>
+        <div id="playerDisplay" class="flex w-[70px] items-center justify-between gap-2">Player:</div>
+        <div id="computerDisplay" class="flex w-[70px] items-center justify-between gap-2">Computer:</div>
+        <div id="resultDisplay"></div>
+           
+        
     </div>            
         </header>
-    </div>
+   
 
-    
+    <section>
+        <div class="flex flex-col items-center justify-center text-3xl font-bold text-blue-800 mt-3">
+            Make your choice:
+        </div>
+
+        <div id="choices" class="flex items-center justify-center mt-8">
+            <button class=" text-3xl" onclick="playGame('rock')">✊</button>
+            <button class="text-3xl" onclick="playGame('paper')">✋</button>
+            <button class="text-3xl" onclick="playGame('scissors')">✌️</button>
+        </div>
+
+
+
+
+    </section>
+
+    </div>
 
     <br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br>
@@ -51,24 +65,9 @@
         </div>
 
     </footer>
-        
-            
-
-
-
-        
-        
-        
-
-
-
-
-
-
-    </header>
-
     
-
+            
+<script src="index.js"></script>
 
     
 </body>
