@@ -6,6 +6,7 @@ const playerScoreDisplay = document.getElementById("playerScoreDisplay");
 const computerScoreDisplay = document.getElementById("computerScoreDisplay");
 let playerScore = 0;
 let computerScore = 0;
+const rules = document.getElementById("viewRules");
 
 function playGame(playerChoice){
 
@@ -47,3 +48,7 @@ function playGame(playerChoice){
             break;
     }   
 }
+
+viewRules.addEventListener('click', function(){
+    alert("Jokenpo is a Japanese game where two players choose one of three possible items: Rock, Paper or Scissors. The rules are as follows: Rock beats Scissors, Scissors beats Paper, Paper beats Rock, if both play the same way, it's a tie.");
+});
